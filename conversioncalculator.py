@@ -56,4 +56,5 @@ if __name__ == "__main__":
 # Comments-if not all bit in 01 for bit in binary_num basically means that if the binary number
 #does not have a 0 or a 1 it is going to print invalid binary number
 # Also power = len(binary_num) - 1 basically means that it will subtract 1 since binary number has a base of 2 and so
-#therfore will always subtract 1 since binary is base 2
+# therfore will always subtract 1 since binary is base 2
+# https://github.com/ComputerGeek76/hardware_software_code
