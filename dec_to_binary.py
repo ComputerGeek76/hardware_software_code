@@ -1,15 +1,19 @@
-def decimal_to_binary(number):
-    result = ""
-    number = int(number)
-    while number > 0:
-        remainder = number % 2
-        number = number // 2
-        result = str(remainder) + result #place string in reverse order
-    return result
+def dec_to_binary(numbers):
+    dec_list = {"0" , "1", "2", "3" , "4", "5", "6", "7" , "8" , "9" , "10"}
+    for number in numbers:
+        if number.upper() not in dec_list: # check if the number is not in dec_list
+            print("Not a decimal number")
+            return(False)
+    return(True)
+
 
 def main():
-    num = input("Enter Decimal Number:")
-    print("Decimal {} to Binary: {}".format(num, decimal_to_binary(num)))
+    good_selection = False
+    while not good_selection:
+        selection = input("Provide a decimal number:")
+        good_selection = dec_to_binary(selection)
+    print("Correct" , selection, "is a decimal number!!!")
+
 
 if __name__ == "__main__":
     main()
